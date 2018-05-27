@@ -33,3 +33,12 @@ print(yueyue.name)
 print(yueyue.age)
 # 注意成员函数的调用没有传递进入参数
 yueyue.doHomework()
+
+
+class Name():
+    def fset(self,name1):
+        self._name1 = name1.lower()
+    name1 = property(fset,"全部小写")
+b1 = Name()
+b1.name1 = "CANDY"
+print(a._name1)
